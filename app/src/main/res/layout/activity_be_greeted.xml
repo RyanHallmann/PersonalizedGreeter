@@ -16,19 +16,18 @@
         android:text="@string/strNamePlaceholder"
         android:ems="10"
         android:id="@+id/edtxtNameField"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="96dp" />
+        android:layout_below="@+id/txtvwFirstName"
+        android:layout_centerHorizontal="true" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/strGetGreeted"
         android:id="@+id/btnGreetMe"
-        android:layout_below="@+id/edtxtNameField"
+        android:onClick="greetTheUser"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="51dp"
-        android:onClick="greetTheUser" />
+        android:layout_marginBottom="31dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -37,7 +36,7 @@
         android:id="@+id/txtvwGreetingSpace"
         android:layout_below="@+id/btnGreetMe"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="77dp" />
+        android:layout_marginTop="-170dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -45,7 +44,55 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="@string/strPromptQuestion"
         android:id="@+id/txtvwPrompt"
-        android:layout_alignParentTop="true"
+        android:layout_above="@+id/edtxtNameField"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="42dp" />
+        android:layout_marginBottom="87dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="@string/strNamePlaceholder"
+        android:ems="10"
+        android:id="@+id/edtxtMiddleNameField"
+        android:layout_below="@+id/txtvwMiddleName"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/strPromptQuestion2"
+        android:id="@+id/txtvwMiddleName"
+        android:layout_below="@+id/edtxtNameField"
+        android:layout_alignLeft="@+id/txtvwFirstName"
+        android:layout_alignStart="@+id/txtvwFirstName" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/strPromptQuestion"
+        android:id="@+id/txtvwFirstName"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/txtvwFirstName" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="@string/strNamePlaceholder"
+        android:ems="10"
+        android:id="@+id/edtxtLastNameField"
+        android:layout_below="@+id/txtvwLastName"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/strPromptQuestion3"
+        android:id="@+id/txtvwLastName"
+        android:layout_below="@+id/edtxtMiddleNameField"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>
